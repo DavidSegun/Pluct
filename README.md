@@ -1,13 +1,40 @@
-# Pluct
-A python client to json API
-// BUILD STATUS //
+pluct
+=====
+
+[![Build Status](https://drone.io/github.com/globocom/pluct/status.png)](https://drone.io/github.com/globocom/pluct/latest)
+[![Build Status](https://travis-ci.org/globocom/pluct.png?branch=master)](https://travis-ci.org/globocom/pluct)
+
+```python
 from pluct import resource
 app = resource.get("http://myapi.com/app/myapp")
-//Verifying if the resource is valid
+```
+
+verifying if the resource is valid:
+```python
 app.is_valid()
-// Retriving the reource data
+```
+
+retrieve the resource data:
+```python
 app.data
-//Retriving resource schema
+```
+
+retrieve the resource schema:
+```python
 app.schema
-//Testing
-The tests directory contains the standard test stack for Pluck
+```
+
+Limitations
+-----------
+
+*pluct* is an experimental project. its limitations:
+
+* partial support for draft 4.
+
+
+Tests
+-----
+
+The ``tests`` directory contains the standard test stack for pluct.
+
+
